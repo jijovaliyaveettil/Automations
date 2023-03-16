@@ -32,7 +32,7 @@ def getslotmachinespin(rows,cols,symbols):
 
     return columns
 
-def print_slot_machine(columns)
+#def print_slot_machine(columns):
 
 
 def deposit():

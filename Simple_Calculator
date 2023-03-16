@@ -1,0 +1,5 @@
+def add(a,b):
+    ans = a + b
+    print(f"{a} + {b} = {ans}")
+
+add(2,2)
