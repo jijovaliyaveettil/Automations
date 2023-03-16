@@ -1,17 +1,17 @@
 def add(a,b):
-    ans = a + b
+    ans = int(a) + int(b)
     print(f"{a} + {b} = {ans}")
 
 def subtract(a,b):
-    ans = a - b
+    ans = int(a) - int(b)
     print(f"{a} - {b} = {ans}")
 
 def multiply(a,b):
-    ans = a * b
+    ans = int(a) * int(b)
     print(f"{a} x {b} = {ans}")
 
 def divide(a,b):
-    ans = a / b
+    ans = int(a) / int(b)
     print(f"{a} / {b} = {ans}")
 
 def main():
@@ -19,16 +19,16 @@ def main():
     n = input("Enter your input: $")
     a = input("Enter the first number: $")
     b = input("Enter the second number: $")
-    while(n):
-        if n == 1 :
-            add(a,b)
-        if n == 2 :
-            subtract(a,b)
-        if n == 3 :
-            multiply(a,b)
-        if n == 4 :
-            divide(a,b)
-        if n == 6 :
-            break
+
+    if n == '1' :
+        add(a,b)
+    elif n == '2' :
+        subtract(a,b)
+    elif n == '3' :
+        multiply(a,b)
+    elif n == '4' :
+        divide(a,b)
+    elif n == '6' :
+        exit
 
 main()
