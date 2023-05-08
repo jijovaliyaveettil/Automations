@@ -61,7 +61,7 @@ df_headlines.to_csv(os.path.join(app_path,filename), index=False)
 # print(df_saved_file)
 driver.quit()
 
-
+# pyinstaller --onefile <file_name.py>
 
 
 
