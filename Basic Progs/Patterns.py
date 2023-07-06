@@ -60,7 +60,27 @@ def pattern8(n):
     for i in range(n):
         for j in range(i):
             print(' ',end="")
-        for j in range(n-2*i):
+        for j in range(2*n-(2*i+1)):
+            print("*",end="")
+        for j in range(i):
+            print(' ',end="")
+        print("")
+        
+def pattern9(n):
+
+    for i in range(n):
+        for j in range(n-i-1):
+            print(' ',end="")
+        for j in range(2*i+1):
+            print("*",end="")
+        for j in range(n-i-1):
+            print(' ',end="")
+        print("")
+        
+    for i in range(n):
+        for j in range(i):
+            print(' ',end="")
+        for j in range(2*n-(2*i+1)):
             print("*",end="")
         for j in range(i):
             print(' ',end="")
@@ -77,6 +97,7 @@ def main():
     # pattern5(n)
     # pattern6(n)
     # pattern7(n)
-    pattern8(n)
+    # pattern8(n)
+    pattern9(n)
 
 main()
