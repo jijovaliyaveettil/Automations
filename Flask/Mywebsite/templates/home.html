@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        #banner{
+           content: normal; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1 class="text-center">{{company_name}} there, </h1>
+    <img class="img-fluid"  id ="banner" src="{{url_for('static', filename='simple1.avif')}}" />
+    <h2 class="text-center"  mt-2 mb-4>About Me</h2>
+    <p class="lead">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida nulla tellus, eget venenatis dolor venenatis sed. Phasellus non orci luctus, pellentesque turpis ac, suscipit lorem. Aliquam tincidunt aliquam sapien in hendrerit. Phasellus congue elit quis purus mattis tristique vitae at augue. Quisque ut accumsan eros, non pellentesque quam. Sed semper pellentesque enim ut molestie. Integer consectetur tempor pretium. Aenean vel sem ut ligula molestie gravida. Suspendisse eros sapien, maximus sit amet tellus ac, rhoncus gravida quam. Praesent gravida ut ipsum eget venenatis.
+    </p>
+</div>
+    <h2 class="text-center" mt-2 mb-4>Open positions</h2>
+    <p> 
+        {% for job in jobs %}
+            
+        {% endfor %}
+   
+    </p>
+    <div class="text-center">
+        <button class="btn btn-outline-primary btn-lg">Contact Us</button>
+        <p>Copyright 2023, Jijo</p>
+    </div>
+    
+</body>
+</html>
