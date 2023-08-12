@@ -13,6 +13,8 @@
     </style>
 </head>
 <body>
+    {% include 'nav.html' %}
+
     <div class="container">
     <h1 class="text-center">{{company_name}} there, </h1>
     <img class="img-fluid"  id ="banner" src="{{url_for('static', filename='simple1.avif')}}" />
@@ -20,7 +22,7 @@
     <p class="lead">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida nulla tellus, eget venenatis dolor venenatis sed. Phasellus non orci luctus, pellentesque turpis ac, suscipit lorem. Aliquam tincidunt aliquam sapien in hendrerit. Phasellus congue elit quis purus mattis tristique vitae at augue. Quisque ut accumsan eros, non pellentesque quam. Sed semper pellentesque enim ut molestie. Integer consectetur tempor pretium. Aenean vel sem ut ligula molestie gravida. Suspendisse eros sapien, maximus sit amet tellus ac, rhoncus gravida quam. Praesent gravida ut ipsum eget venenatis.
     </p>
-</div>
+
     <h2 class="text-center mt-2 mb-4">Open positions</h2>
     <div>
         {% for job in jobs %}
@@ -31,6 +33,7 @@
         <button class="btn btn-outline-primary btn-lg">Contact Us</button>
         <p>Copyright 2023, Jijo</p>
     </div>
-    
+</div>
+    {% include 'footer.html' %}
 </body>
 </html>
