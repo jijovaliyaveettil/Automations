@@ -1,5 +1,5 @@
 # Automation
-These are some just basic automation programs that I have done to make some tasks easier in my day to day life. These codes are raw and i just worked on them while learning fraeworks such as selenium and BeautifulSoup.
+These are some just basic automation programs that I have done to make some tasks easier in my day to day life. These codes are raw and i just worked on them while learning frameworks such as selenium and BeautifulSoup.
 
 Something to work on in the Future:
 
